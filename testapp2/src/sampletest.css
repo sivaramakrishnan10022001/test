@@ -1,0 +1,153 @@
+/* =================================================== */
+
+
+/* Tree View */
+
+.tree-view {
+    font-size: 12px;
+    color: var(--generaltextgray1);
+    margin-bottom: 2rem;
+}
+
+/* .tree-view>.tree-item {} */
+
+.tree-view>.tree-item>.folder {
+    margin-left: 4px;
+    padding-left: 4px;
+    border-left: 1px solid rgba(189, 197, 192, 0.2);
+}
+
+/* .tree-view>.tree-item>.folder.expanded {} */
+
+.tree-view>.tree-item>.folder>.title {
+    width: auto;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    cursor: pointer;
+    /* transition: all 0.3s; */
+}
+
+.tree-view>.tree-item>.folder>.title:hover {
+    background: rgba(189, 197, 192, 0.2);
+}
+
+.tree-view>.tree-item>.folder>.title.active,
+.tree-view>.tree-item>.item>.title.active {
+    border: 1px solid #22a0e2;
+}
+
+.tree-view>.tree-item>.item>.title>.name,
+.tree-view>.tree-item>.folder>.title>.name {
+    display: flex;
+    align-items: center;
+}
+
+.tree-view>.tree-item>.folder>.title>.name>.caret {
+    width: 12x;
+    height: 12px;
+    margin-right: 4px;
+    /* transition: transform 0.2s; */
+}
+
+/* .tree-view>.tree-item>.folder.expanded>.title>.name>.caret {} */
+
+.tree-view>.tree-item>.folder>.title>.name>.icon {
+    width: 16x;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.tree-view>.tree-item>.item>.title>.options,
+.tree-view>.tree-item>.folder>.title>.options {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    display: none;
+    align-items: center;
+    right: 0;
+}
+
+.tree-view>.tree-item>.item>.title>.options>button,
+.tree-view>.tree-item>.folder>.title>.options>button {
+    background: transparent;
+    box-shadow: unset;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    margin: 0px 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree-view>.tree-item>.item>.title:hover>.options,
+.tree-view>.tree-item>.folder>.title:hover>.options {
+    display: flex;
+}
+
+.tree-view>.tree-item>.item>.title.active>.options,
+.tree-view>.tree-item>.folder>.title.active>.options {
+    display: flex;
+}
+
+.tree-view>.tree-item>.folder>.title>.name>.rename-box,
+.tree-view>.tree-item>.item>.title>.name>.rename-box {
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: inherit;
+    font-weight: inherit;
+    border: 1px solid #22a0e2;
+    padding: 4px;
+}
+
+.tree-view>.tree-item>.item>.title>.options>button:hover,
+.tree-view>.tree-item>.folder>.title>.options>button:hover {
+    background: rgba(189, 197, 192, 0.3);
+}
+
+.tree-view>.tree-item>.item>.title>.options>button>img,
+.tree-view>.tree-item>.folder>.title>.options>button>img {
+    width: 14px;
+    height: 14px;
+}
+
+/* .tree-view>.tree-item>.folder>.content {} */
+
+.tree-view>.tree-item>.item {
+    margin-left: 4px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(189, 197, 192, 0.2);
+}
+
+.tree-view>.tree-item>.item>.title {
+    padding: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    /* transition: all 0.3s; */
+}
+
+.tree-view>.tree-item>.item>.title>.name>.icon {
+    width: 14x;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.tree-view>.tree-item>.item>.title:hover {
+    background: rgba(189, 197, 192, 0.2);
+}
+
+.tree-view>.tree-item>.item.selected>.title {
+    background: rgba(3, 107, 252, 0.1);
+    color: var(--textblack1);
+    font-weight: 600;
+}

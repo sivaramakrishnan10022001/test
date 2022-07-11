@@ -1,0 +1,59 @@
+.p-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-container {
+    display: flex;
+    align-items: center;
+}
+
+.c-container>.handle {
+    display: flex;
+    align-items: center;
+    cursor: move;
+}
+
+.c-container>.handle>svg {
+    cursor: move;
+}
+
+.c-container>.value {
+    display: flex;
+    align-items: center;
+}
+
+/* ================================================================= */
+/* ========================== sample css =========================== */
+/* ================================================================= */
+
+
+.c-container.sample {
+    width: 500px;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid gainsboro;
+}
+
+.c-container.sample>.handle {
+    height: 100%;
+    width: 12%;
+    font-size: 23px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.c-container.sample>.handle>svg {
+    height: 15px;
+    width: 15px;
+}
+
+.c-container.sample>.value {
+    height: 100%;
+    width: 100%;
+}

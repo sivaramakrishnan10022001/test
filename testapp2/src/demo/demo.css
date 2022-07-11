@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.d-wapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-wapper>.d-container {
+    width: 500px;
+    height: 60px;
+}
+
+.sortableItem {
+    display: flex;
+    box-align: center;
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    color: #777;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sortableItem>.sortableItem-handle {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: move;
+}
+
+.sortableItem>.sortableItem-handle>svg {
+    height: 20px;
+    width: 20px;
+    cursor: move;
+}
+
+.sortableItem>.content {
+    padding-left: 20px;
+}
+
+/* sample css */
+
+
+
